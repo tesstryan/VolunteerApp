@@ -1,0 +1,35 @@
+<h3>Add a new opportunity below:</h3>
+
+<%= form_tag posts_url, method: 'post' do %>
+
+<%= label_tag "company", "Company:" %>
+<%= text_field_tag "company" %>
+<br>
+<%= label_tag "task_name", "Name of Task:" %>
+<%= text_field_tag "task_name" %>
+<br>
+<%= label_tag "task_name", "Name of Task:" %>
+<%= text_field_tag "task_name" %>
+<br>
+<%= label_tag "description", "Description:" %>
+<%= text_field_tag "description" %>
+<br>
+<%= label_tag "exact_location", "Physical Address:" %>
+<%= text_field_tag "exact_location" %>
+<br>
+<%= label_tag "tools", "Tools Needed:" %>
+<%= text_field_tag "tools" %>
+<br>
+<%= label_tag "time", "Time:" %>
+<%= text_field_tag "time" %>
+<br>
+<%= label_tag "date", "Date:" %>
+<%= text_field_tag "date" %>
+<br>
+<%= submit_tag "Submit", class: "btn btn-primary"%>
+
+<% end %>
+
+<br><br>
+
+<%= link_to "Homepage", posts_url %>

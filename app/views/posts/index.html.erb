@@ -1,0 +1,36 @@
+<style>
+img {width: 100px;}
+.post {
+  border-bottom: solid 1px gray;
+  width: 300px;
+  text-align: center;
+  box-shadow: ;
+  padding: 10px;
+  float: left;
+}
+.jumbotron h2 {font-size: 50px}
+
+.jumbotron p {
+  font-size: 20px}
+}
+
+</style>
+
+<div class="jumbotron">
+  <h2>Volunteer Today (or Tomorrow!)</h2>
+  <p>Please see below for volunteer opportunities happeneing today & tomorrow in your area.</p>
+  <p><%= link_to "Click here to add an opportunity!", new_post_url,  class: "btn btn-primary btn-lg" %></p>
+</div>
+
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <h4><%= link_to "#{post.task_name}", post_url(post.id) %></h4>
+  <p><%= post.company %></p>
+  <img src="http://tapchicago.org/wp-content/uploads/2012/08/lakeviewpantry-logo-1.jpg"><br>
+  <%= link_to "Edit post", edit_post_url(post.id) %>
+  <%= link_to "Delete post", post_url(post.id), method: 'delete' %>
+  </div>
+<% end %>
+
+

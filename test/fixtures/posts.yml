@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company: MyString
+  duration: 1
+  task_name: MyString
+  description: MyText
+  location: 1
+  date: MyString
+  time: 1
+  tools: MyString
+  exact_location: MyString
+
+two:
+  company: MyString
+  duration: 1
+  task_name: MyString
+  description: MyText
+  location: 1
+  date: MyString
+  time: 1
+  tools: MyString
+  exact_location: MyString
