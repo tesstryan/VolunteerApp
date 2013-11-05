@@ -30,8 +30,9 @@ class PostsController < ApplicationController
     @post.task_name = params[:task_name]
     @post.description = params[:description]
     @post.exact_location = params[:exact_location]
-    @post.toos = params[:tools]
+    @post.tools = params[:tools]
     @post.date = params[:date]
+    @post.save
 
     redirect_to posts_url
   end

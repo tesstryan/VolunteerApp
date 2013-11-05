@@ -1,6 +1,8 @@
+<div class="container">
+
 <h3>Need to edit an opportunity below:</h3>
 
-<%= form_tag posts_url, method: 'patch' do %>
+<%= form_tag post_url(@post.id), method: 'patch' do %>
 
 <%= label_tag "company", "Company:" %>
 <%= text_field_tag "company", @post.company %>
@@ -31,4 +33,4 @@
 
 <%= link_to "Go Back to Homepage", posts_url %>
 
-
+</div>
