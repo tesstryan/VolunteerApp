@@ -1,5 +1,7 @@
 VolunteerApp::Application.routes.draw do
 
+    root 'posts#index'
+
     get '/posts' => 'posts#index', :as => 'posts'
 
   # CREATE
