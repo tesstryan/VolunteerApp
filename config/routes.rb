@@ -1,7 +1,5 @@
 VolunteerApp::Application.routes.draw do
 
-  # resources :posts
-
     get '/posts' => 'posts#index', :as => 'posts'
 
   # CREATE
